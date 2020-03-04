@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'zaliczenie';
+  clicked =false;
+  handleClick(){
+    this.clicked =true;
+  }
+
 }
