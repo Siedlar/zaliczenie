@@ -9,11 +9,14 @@ import { HomeHeaderComponent } from './home/home-header/home-header.component';
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     HomeComponent,
     HeaderComponent,
     FooterComponent,
     HomeHeaderComponent,
 
+=======
+>>>>>>> d157778c259e864a04ab816495230825d109f625
   ],
   imports: [
     BrowserModule,
