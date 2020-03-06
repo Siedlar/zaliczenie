@@ -6,6 +6,16 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { HomeHeaderComponent } from './home/home-header/home-header.component';
+import { Routes, RouterModule } from '@angular/router';
+import { ProfilComponent } from './profil/profil.component';
+import { SklepComponent } from './sklep/sklep.component';
+import { KarnetComponent } from './karnet/karnet.component';
+const appRoutes:Routes =[
+{path:'',component:HomeComponent},
+{path:'profil',component:ProfilComponent},
+{path:'sklep',component:SklepComponent},
+{path:'karnet',component:KarnetComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,11 +23,14 @@ import { HomeHeaderComponent } from './home/home-header/home-header.component';
     HeaderComponent,
     FooterComponent,
     HomeHeaderComponent,
-
+    ProfilComponent,
+    SklepComponent,
+    KarnetComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]

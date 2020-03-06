@@ -6,3 +6,8 @@ header {
     width: 100%;
     background-attachment: fixed;
 }
+#jumbotron{
+    color:rgba(30,139,195,1);
+    background: none;
+    border:solid rgba(30,139,195,1) 3px;
+}
