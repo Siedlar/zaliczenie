@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {YouTubePlayerModule, YouTubePlayer} from '@angular/youtube-player'
 @Component({
   selector: 'app-sklep',
   templateUrl: './sklep.component.html',
@@ -11,5 +11,5 @@ export class SklepComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+allow='essa';
 }

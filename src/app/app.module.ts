@@ -13,6 +13,7 @@ import { KarnetComponent } from './karnet/karnet.component';
 import { SekcjaComponent } from './home/sekcja/sekcja.component';
 import { GaleriaComponent } from './home/galeria/galeria.component';
 import { TeamComponent } from './home/team/team.component';
+import {YouTubePlayerModule} from '@angular/youtube-player';
 const appRoutes:Routes =[
 {path:'',component:HomeComponent},
 {path:'profil',component:ProfilComponent},
@@ -37,6 +38,7 @@ const appRoutes:Routes =[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
+    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
