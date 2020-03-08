@@ -10,6 +10,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProfilComponent } from './profil/profil.component';
 import { SklepComponent } from './sklep/sklep.component';
 import { KarnetComponent } from './karnet/karnet.component';
+import { SekcjaComponent } from './home/sekcja/sekcja.component';
+import { GaleriaComponent } from './home/galeria/galeria.component';
+import { TeamComponent } from './home/team/team.component';
 const appRoutes:Routes =[
 {path:'',component:HomeComponent},
 {path:'profil',component:ProfilComponent},
@@ -26,6 +29,9 @@ const appRoutes:Routes =[
     ProfilComponent,
     SklepComponent,
     KarnetComponent,
+    SekcjaComponent,
+    GaleriaComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,
