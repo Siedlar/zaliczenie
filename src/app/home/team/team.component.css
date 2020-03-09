@@ -7,7 +7,9 @@
   .team .member .pic {
     overflow: hidden;
   }
-  
+  h2{
+    text-align: center;
+}
   .team .member .member-info {
     position: absolute;
     top: 85%;

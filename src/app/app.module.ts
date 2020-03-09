@@ -13,7 +13,8 @@ import { KarnetComponent } from './karnet/karnet.component';
 import { SekcjaComponent } from './home/sekcja/sekcja.component';
 import { GaleriaComponent } from './home/galeria/galeria.component';
 import { TeamComponent } from './home/team/team.component';
-import {YouTubePlayerModule} from '@angular/youtube-player';
+import {ExponentialStrengthPipe} from './home/sekcja/shorten.pipe';
+import { KontaktComponent } from './home/kontakt/kontakt.component'
 const appRoutes:Routes =[
 {path:'',component:HomeComponent},
 {path:'profil',component:ProfilComponent},
@@ -22,6 +23,7 @@ const appRoutes:Routes =[
 ];
 @NgModule({
   declarations: [
+    ExponentialStrengthPipe,
     AppComponent,
     HomeComponent,
     HeaderComponent,
@@ -33,12 +35,13 @@ const appRoutes:Routes =[
     SekcjaComponent,
     GaleriaComponent,
     TeamComponent,
+    KontaktComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

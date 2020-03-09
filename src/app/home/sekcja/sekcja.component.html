@@ -5,11 +5,11 @@
       <div class="row no-gutters">
         <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
           <div class="content">
-            <h3>O nas.</h3>
+            <h3>{{nazwy[0]}}</h3>
             <p>
                 Wysoka jakość jest dla nas standardem.
                 Cieszymy się, że tu jesteś. Szukasz informacji o nas? Za chwilę wszystko Ci opowiemy.
-               GymFreaks to nie tylko sieć klubów fitness. To miejsce, w którym osiągasz cele, zdobywasz kolejne wyżyny swoich umiejętności, poznajesz ludzi i spełniasz efektywnie czas wolny.
+               GymFreaks to nie tylko sieć klubów fitness.Wszystko zaczęło się  dnia {{ birthday | date:"MM/dd/yy" }}.To miejsce, w którym osiągasz cele, zdobywasz kolejne wyżyny swoich umiejętności, poznajesz ludzi i spełniasz efektywnie czas wolny.
                 Aktualnie sieć liczy aż 23 kluby w całej Polsce i liczba ta rośnie. Chcemy dotrzeć do jak największej liczby Polaków, aby przekazać im swoją pasję do zdrowego stylu życia!
             </p>
           </div>
@@ -19,26 +19,26 @@
             <div class="row">
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                 <i class="bx bx-receipt"></i>
-                <h4>Karnet dopasowany do Ciebie</h4>
+                <h4>{{nazwy[1]| uppercase}}</h4>
                 <p> Jednorazowa wejściówka, karnet miesięczny bez umowy długoterminowej, a może karnet roczny w najlepszej cenie? Sam wybierasz, a członkostwem zarządzasz online.</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                 <i class="bx bx-cube-alt"></i>
-                <h4>Dostęp 24/7</h4>
+                <h4>{{nazwy[2]| uppercase}}</h4>
                 <p>Wpadaj na trening zawsze, kiedy masz na to ochotę. Nasze kluby są czynne całodobowo, 7 dni w tygodniu. Również we wszystkie niedziele i święta.</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                 <i class="bx bx-images"></i>
-                <h4>Zajęcia fitness</h4>
+                <h4>{{nazwy[3]| uppercase}}</h4>
                 <p>Mamy ich naprawdę dużo: od jogi przez zumbę po sztuki walki. Wybierz swoje ulubione, zapisz się wygodnie online i czerp energię z siły grupy.</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                 <i class="bx bx-shield"></i>
-                <h4>Dużo dobrego sprzętu</h4>
-                <p>W każdym klubie znajdziesz ponad 300 urządzeń i akcesoriów sprawdzonych producentów. Testujemy i sprowadzamy dla Ciebie maszyny, których nie znajdziesz nigdzie indziej.</p>
+                <h4>{{nazwy[4]| uppercase}}</h4>
+                <p>W każdym klubie znajdziesz ponad {{2 | exponentialStrength: 10}} urządzeń i akcesoriów sprawdzonych producentów. Testujemy i sprowadzamy dla Ciebie maszyny, których nie znajdziesz nigdzie indziej.</p>
               </div>
             </div>
-          </div><!-- End .content-->
+          </div>
         </div>
       </div>
 
